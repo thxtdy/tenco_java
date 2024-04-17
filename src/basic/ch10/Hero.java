@@ -16,24 +16,28 @@ public class Hero {
 	public void SetHeroinfo(String myName) {
 		this.name = myName;
 	}
+	
 	public int getHp() {
 		return this.hp;
 	}
 	public void setHp(int myHp) {
 		this.hp = myHp;
 	}
+	
 	public int getPower() {
 		return this.power;
 	}
 	public void setPower(int myPower) {
 		this.power = myPower;
 	}
+	
 	public double getDefense() {
 		return this.defense;
 	}
 	public void setDefense(double myDefense) {
 		this.defense = myDefense;
 	}
+	
 	public boolean getIsdie() {
 		return this.isDie;
 	}
