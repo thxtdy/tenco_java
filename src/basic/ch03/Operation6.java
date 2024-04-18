@@ -1,4 +1,4 @@
-package ch03;
+package basic.ch03;
 
 /**
  * 논리 연산자

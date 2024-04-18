@@ -1,4 +1,4 @@
-package ch03;
+package basic.ch03;
 
 import java.util.Scanner;
 // import : 수입하다, 가지고 오다.

@@ -1,4 +1,4 @@
-package ch03;
+package basic.ch03;
 
 /**
  * 증감, 감소 연산자

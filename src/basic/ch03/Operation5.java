@@ -1,4 +1,4 @@
-package ch03;
+package basic.ch03;
 
 /**
  * 관계,비교 연산자

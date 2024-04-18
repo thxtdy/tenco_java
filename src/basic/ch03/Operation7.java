@@ -1,4 +1,4 @@
-package ch03;
+package basic.ch03;
 
 /**
  * 빠른 평가란?
