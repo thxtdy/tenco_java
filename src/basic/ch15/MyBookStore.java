@@ -20,7 +20,7 @@ public class MyBookStore {
 
 		Book[] books = new Book[100];
 
-		// 샘플 데이터 만들어놓기
+	
 		books[0] = new Book("플러터UI실전", "김근호");
 		books[1] = new Book("무궁화꽃이피었슴다", "김진명");
 		books[2] = new Book("흐르는강물처럼...", "파울로쿄엘료");
@@ -40,7 +40,7 @@ public class MyBookStore {
 			System.out.println(" ** 메뉴 선택 **");
 			System.out.println("1. 저장 // 2. 전체 조회 // 3. 선택 조회 // 4. 전체삭제 // 0. 종료");
 
-			// 문자열 + 다음줄로 이동 처리
+	
 			String selectedNumber = sc.nextLine();
 
 			if (selectedNumber.equals(SAVE)) {
@@ -123,9 +123,7 @@ public class MyBookStore {
 		System.out.println("책 제목을 입력하세요.");
 		String bookTitle = sc.nextLine();
 
-		// 만약 사용자가 입력한 책 제목과 배열 요소 안의 title 값이 같다면
-		// 화면에 책 제목, 책 저자 이름을 출력하고
-		// 아니라면, 해당하는 책이 없습니다를 출력
+
 
 		for (int i = 0; i < books.length; i++) {
 
