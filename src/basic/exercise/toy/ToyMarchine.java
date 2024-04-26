@@ -16,11 +16,9 @@ public class ToyMarchine {
 
 	public void random() {
 		Scanner sc = new Scanner(System.in);
-		Airpods airpods = new Airpods("콩나물", 1);
-		Beardoll bear = new Beardoll("볼리베어", 2);
-		Liondoll lion = new Liondoll("사자짱짱킹", 3);
 
-		System.out.println("123");
+		System.out.println("===============뽑기짱짱킹쯍===============");
+		System.out.println("1. 1회 뽑기 // 2. 5회 뽑기 // 3. 10회 뽑기");
 		
 		int chooseNum = sc.nextInt();
 		int turnNum = 0;
@@ -36,19 +34,26 @@ public class ToyMarchine {
 		products = new Product[turnNum];
 
 		for (int i = 0; i < turnNum; i++) {
-			int randomValue = (int) (Math.random() * 3) + 1;
+			int randomValue = (int) (Math.random() * 20) + 1;
 
-			if (randomValue == airpods.getNum()) {
+			if (randomValue == 1) {
 				products[i] = new Airpods("콩나물", 1);
-			} else if (randomValue == bear.getNum()) {
+			} else if (randomValue == 2) {
 				products[i] = new Beardoll("볼리베어", 2);
-			} else if (randomValue == lion.getNum()) {
-				products[i] = new Liondoll("사자짱짱킹", 3);
+			} else if (randomValue == 3) {
+				products[i] = new Liondoll("슈퍼이끌리는사자짱짱킹", 3);
 			}
 
+			if(products[i] instanceof Airpods) {
+				System.out.println("콩나물 당첨.");
+			} else if (products[i] instanceof Beardoll) {
+				System.out.println("볼리베어 당첨");
+			} else if (products[i] instanceof Liondoll) {
+				System.out.println("슈퍼이끌리는 사자킹 당첨");
+			}else {
+				System.out.println("미끌미끌 꽝꽝");
+			}
 			
-			
-			System.out.println("00");
 //			if (chooseNum == 1) {
 //				int intValue = (int) (randomValue * 7) + 1;
 //				if (products[0].getNum() == intValue) {
@@ -87,18 +92,6 @@ public class ToyMarchine {
 
 		}
 
-		for (int i = 0; i < turnNum; i++) {
-			
-			if(products[i] instanceof Airpods) {
-				System.out.println("콩나물 당첨.");
-			} else if (products[i] instanceof Beardoll) {
-				System.out.println("볼리베어 당첨");
-			} else if (products[i] instanceof Liondoll) {
-				System.out.println("슈퍼이끌리는 사자킹 당첨");
-			} else {
-				System.out.println("머고");
-			}
-		}
 		
 	}
 
